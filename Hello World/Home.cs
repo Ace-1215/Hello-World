@@ -2,8 +2,10 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics.Metrics;
 using System.Drawing;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -17,7 +19,7 @@ namespace Hello_World
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void Button1_Click(object sender, EventArgs e)
         {
             splitContainer1.Panel2.Controls.Clear();
 
@@ -34,12 +36,12 @@ namespace Hello_World
             splitContainer1.Panel2.Controls.Add(newFrm);
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void Button2_Click(object sender, EventArgs e)
         {
             splitContainer1.Panel2.Controls.Clear();
 
 
-            Howtodemo newFrm = new Howtodemo();
+            Counter newFrm = new Counter();
 
 
             newFrm.TopLevel = false;
@@ -51,7 +53,7 @@ namespace Hello_World
             splitContainer1.Panel2.Controls.Add(newFrm);
         }
 
-        private void button3_Click(object sender, EventArgs e)
+        private void Button3_Click(object sender, EventArgs e)
         {
             splitContainer1.Panel2.Controls.Clear();
 
