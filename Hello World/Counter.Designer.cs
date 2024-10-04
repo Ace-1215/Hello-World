@@ -43,7 +43,6 @@
             label1.Size = new Size(36, 37);
             label1.TabIndex = 3;
             label1.Text = "0";
-            label1.Click += Label1_Click;
             // 
             // button1
             // 
@@ -58,7 +57,6 @@
             // 
             // timer1
             // 
-            timer1.Tick += Timer1_Tick;
             // 
             // Howtodemo
             // 
